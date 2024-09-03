@@ -3,21 +3,21 @@ function calc(op){
     let n2 = parseFloat(document.getElementById('ndois').value);
     let res = 0;
 
-    if (isNaN(num) || isNaN(ndois)){
+    if (isNaN(n1) || isNaN(n2)){
         alert('tá errado seu burrao arruma isso ai');
 
     }else{
         if (op == '+'){
-            res == n1 + n2;
+            res = n1 + n2;
         }else if (op == '-'){
-            res == n1 - n2;            
+            res = n1 - n2;            
         }else if (op == '*'){
-            res == n1 * n2;            
+            res = n1 * n2;            
         }else if (op == '/'){
-            res == n1 / n2;            
+            res = n1 / n2;            
         }
 
-        document.getElementById('result').textContent = res;
+        document.getElementById('result').textContent = 'resultado:' + res;
 
     }
 
