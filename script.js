@@ -15,7 +15,12 @@ function calc(op){
             res = n1 * n2;            
         }else if (op == '/'){
             res = n1 / n2;            
+        }else if (op == '%'){
+            res = n1 / 100 * n2;        
+        }else if (op == '^'){
+            res = n1 ** n2;  
         }
+        
 
         document.getElementById('result').textContent = 'resultado:' + res;
 
